@@ -1,5 +1,10 @@
 package modelos;
 
+import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class RespuestaApiTorneo {
@@ -52,20 +57,37 @@ public class RespuestaApiTorneo {
     }
 
     public List<Partido> getPartidos(){
-        List<Partido> retorno=null;
+        List<Partido> retorno=new ArrayList<Partido>();
+        retorno.clear();
         if (fases!=null) {
             for (int i = 0; i < fases.size(); i++) {
                 Fase f = fases.get(i);
+                Log.e("Respuesta Api Torneo:","fase:"+f.getNombreFase());
                 if (f.getGrupos() != null) {
                     List<Grupo> gs = f.getGrupos();
                     for (int e = 0; e < gs.size(); e++) {
                         Grupo g = gs.get(e);
+                        Log.e("Respuesta Api Torneo:","grupo: "+g.getNombGrupo()+" part:"+g.getPartidos().size());
                         List<Partido> ps = g.getPartidos();
+
+                        if(!ps.isEmpty()){
+                            for(Partido p:ps) {
+                                Log.e("Respuesta Api Partido:", "partido: " + p.getIdPartido());
+                            }
+                        }
                         retorno.addAll(ps);
-                    }
+                        }
                 }
             }
         }
+        Log.e("Respuesta Api Torneo:","ret : "+retorno.size());
+        Collections.sort(retorno, new Comparator<Partido>() {
+            @Override
+            public int compare(Partido partido, Partido t1) {
+                return partido.getIdPartido().compareTo(t1.getIdPartido());
+            }
+        });
+
         return retorno;
     }
 

@@ -3,6 +3,7 @@ package com.grupo12.viera.pencauy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -39,6 +40,7 @@ public class MenuPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in=new Intent(MenuPrincipal.this,ListadoPencas.class);
+                Log.e("MENU PRINC.","listado pencas");
                 startActivity(in);
             }
         });

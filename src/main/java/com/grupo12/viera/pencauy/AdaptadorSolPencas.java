@@ -46,8 +46,7 @@ public class AdaptadorSolPencas extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
-        return listItems.get(i);
+    public Object getItem(int i) { return listItems.get(i);
     }
 
     @Override

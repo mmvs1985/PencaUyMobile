@@ -32,6 +32,7 @@
         <activity android:name=".MenuPrincipal" />
         <activity android:name=".MostrarPenca" />
         <activity android:name=".ListadoPartidoTorneo"></activity>
+        <activity android:name=".ListadoSolPencas"></activity>
     </application>
 
 </manifest>

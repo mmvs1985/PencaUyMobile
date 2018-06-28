@@ -38,10 +38,8 @@
         android:layout_height="47dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
-
         android:text="@string/txtListadoPencas"
         app:layout_constraintEnd_toEndOf="@+id/btnPencas"
-
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

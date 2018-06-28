@@ -57,15 +57,17 @@ public class ListadoPartidoTorneo extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     RespuestaApiTorneo respuesta = response.body();
                     List<Partido> listaRespuesta = respuesta.getPartidos();
+
                     retorno.addAll(listaRespuesta);
                     Log.i(ETIQUETA, "Respuesta torneo:" + respuesta.getNombre() + " fases: " + respuesta.getFases().size());
+                    Log.i(ETIQUETA, "Respuestatorneo partidos:" + listaRespuesta.size()+"retorno"+retorno.size() );
+                    for (int i = 0; i < listaRespuesta.size(); i++) {
+                        Partido r = listaRespuesta.get(i);
+                        Log.i(ETIQUETA, "Respuesta:" + i + " " + r.getIdPartido());
+                        //retorno.add(new ItemParticipante(r.getNombre(),r.getApellido(),r.getEmail(),r.getNickname(),r.getPuntos()));
+                        //adaptador2.notifyDataSetChanged();
+                    }
                     adaptador.notifyDataSetChanged();
-                    /*for (int i = 0; i < listaRespuesta.size(); i++) {
-                        Respuesta r = listaRespuesta.get(i);
-                        Log.i(ETIQUETA, "Respuesta:" + i + " " + r.getNombre());
-                        retorno.add(new ItemParticipante(r.getNombre(),r.getApellido(),r.getEmail(),r.getNickname(),r.getPuntos()));
-                        adaptador2.notifyDataSetChanged();
-                    }*/
                 } else {
                     Log.e(ETIQUETA, "en respuesta:" + response.errorBody());
                 }

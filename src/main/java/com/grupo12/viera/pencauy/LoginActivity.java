@@ -73,7 +73,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         //creo el conextor retrofit
-        String urlbase=ConfigSingletton.getInstance().getUrlbase()+"login/";
         retro = ConfigSingletton.getInstance().getRetro();
 
         // Set up the login form.

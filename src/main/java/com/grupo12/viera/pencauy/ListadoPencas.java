@@ -20,7 +20,7 @@ import retrofit2.Retrofit;
 
 public class ListadoPencas extends AppCompatActivity {
 
-    private static final String ETIQUETA ="RESPUESTAS API pencas";
+    private static final String ETIQUETA ="RESP API pencas";
     private Retrofit retro;
     private ArrayList<ItemPencas> arrai;
     private ListView vistalista;
@@ -63,7 +63,7 @@ public class ListadoPencas extends AppCompatActivity {
                     ArrayList<ItemPencas> listaRespuesta = respuesta.getResultado();
                     for (int i = 0; i < listaRespuesta.size(); i++) {
                         ItemPencas r = listaRespuesta.get(i);
-                       // Log.i(ETIQUETA, "Respuesta:" + i + " " + r.getNombre()+"Es solicitada?: "+r.getFueSolicitada());
+                       Log.i(ETIQUETA, "Respuesta:" + i + " " + r.getNombre());
                         arrai.add(r);
                         adaptador.notifyDataSetChanged();
                     }

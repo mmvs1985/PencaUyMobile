@@ -20,7 +20,7 @@ import retrofit2.Retrofit;
 
 public class ListadoSolPencas extends AppCompatActivity {
 
-    private static final String ETIQUETA ="RESPUESTAS API pencas";
+    private static final String ETIQUETA ="RESP API Sol pencas";
     private Retrofit retro;
     private ArrayList<ItemPencas> arrai;
     private ListView vistalista;
@@ -34,6 +34,7 @@ public class ListadoSolPencas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listado_pencas);
         //creo el conextor retrofit
+        Log.i(ETIQUETA, "entro al solPencas" );
         retro = ConfigSingletton.getInstance().getRetro();
         //ejecuto el llamado
         obtenerDatos();
@@ -43,7 +44,6 @@ public class ListadoSolPencas extends AppCompatActivity {
         arrai=new ArrayList<ItemPencas>();
         //y defino el adaptador, que se encarga de cargar la lista con los datos del array
         adaptador=new AdaptadorSolPencas(getApplicationContext(),arrai,retro,usuarioLoguado.getId());
-
         vistalista.setAdapter(adaptador);
     }
 

@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConfigSingletton {
     private static final ConfigSingletton ourInstance = new ConfigSingletton();
-    private static final String urlbase="http://192.168.1.8:8080/PencaUyLocal-Backoffice-servicios/rest/api/";
+    private static final String urlbase="http://192.168.1.8:8180/PencaUyLocal-Backoffice-servicios/rest/api/";
     private static Usuario usuarioLogueado;
     private static Retrofit retro=null;
 

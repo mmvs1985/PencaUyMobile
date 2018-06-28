@@ -37,4 +37,5 @@
     <string name="equipoLoctxt">equipoLoc</string>
     <string name="txtListaPartidos">Lista de partidos</string>
     <string name="nombretxt">nombre: </string>
+    <string name="nrotxt">nro</string>
 </resources>
