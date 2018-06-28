@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Pencauy</string>
+    <string name="txtUsr">Usuario</string>
+    <string name="strpass">Password</string>
+    <string name="strLogin">Login</string>
+    <string name="title_activity_listado_tablaposiciones">ListadoTablaposiciones</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña (opcional)</string>
+    <string name="action_sign_in">Loguearse</string>
+    <string name="action_sign_in_short">Ingresar</string>
+    <string name="error_invalid_email">Esta direccion de email es invalida</string>
+    <string name="error_invalid_password">Esta contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="error_network">No hay red, verifica tu conexion</string>
+    <string name="strLog">Login</string>
+    <string name="txtListadoPencas">Listado de pencas</string>
+    <string name="txtListadoParticipantes">Listado de participantes</string>
+    <string name="title_activity_login">Login</string>
+    <string name="txtPtos">Puntos</string>
+    <string name="txtNick">Nickname</string>
+    <string name="Seleccionetxt">Seleccione una opcion</string>
+    <string name="ip"></string>
+    <string name="urlbase">http://172.16.117.246:8080/PencaUyLocal-Backoffice-servicios/rest/api/</string>
+    <string name="pencastxt">pencas</string>
+    <string name="solicitudestxt">solicitudes</string>
+    <string name="apuestastxt">apuestas</string>
+    <string name="pencatxt">penca:</string>
+    <string name="nombrePencatxt">Penca nombre:</string>
+    <string name="txtNoPartido">Numero de partido: </string>
+    <string name="equipoLoctxt">equipoLoc</string>
+    <string name="txtListaPartidos">Lista de partidos</string>
+    <string name="nombretxt">nombre: </string>
+</resources>
