@@ -1,6 +1,7 @@
 package com.grupo12.viera.pencauy;
 
 import modelos.RespuestaApiBooleana;
+import modelos.RespuestaApiPenUsr;
 import modelos.RespuestaApiPencas;
 import modelos.RespuestaApiTorneo;
 import retrofit2.Call;
@@ -28,5 +29,9 @@ public interface ServicioApiListadoPencas {
     @POST("torneo/getTorneoPorPenca/{idPenca}")
     Call<RespuestaApiTorneo>obtenerTorneoPorPenca(@Path("idPenca") String idPenca);
 
-
+    @POST("pencausuario/existe_get/{idUsr}/{idPenca}")
+    Call<RespuestaApiPenUsr>existe_getPencaUsuario(@Path("idPenca") String idPenca, @Path("idUsr") String idUsuario);
+    /*
+//int goleslocal, int golesvisita, int equipopasa, int partido, int pencausuario
+    @POST("apuestas/realizar/")*/
 }

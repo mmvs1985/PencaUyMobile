@@ -1,43 +1,28 @@
 package modelos;
 
 
+import android.util.Log;
+
 public class RespuestaApiPenUsr {
 
-    private Integer puntos;
-    private String usuario;
-    private String penca;
-    private String organizacion;
+    private Boolean resultado;
+    private PencaUsuario pencaUsuario;
 
-    public Integer getPuntos() {
-        return puntos;
+    public Boolean getResultado() {
+        return resultado;
     }
 
-    public void setPuntos(Integer puntos) {
-        this.puntos = puntos;
+    public void setResultado(Boolean resultado) {
+        this.resultado = resultado;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public PencaUsuario getPencaUsuario() {
+        return pencaUsuario;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getPenca() {
-        return penca;
-    }
-
-    public void setPenca(String penca) {
-        this.penca = penca;
-    }
-
-    public String getOrganizacion() {
-        return organizacion;
-    }
-
-    public void setOrganizacion(String organizacion) {
-        this.organizacion = organizacion;
+    public void setPencaUsuario(PencaUsuario pencaUsuario) {
+        this.pencaUsuario = pencaUsuario;
+        Log.e("Desde","Set pencausuario");
     }
 
 }

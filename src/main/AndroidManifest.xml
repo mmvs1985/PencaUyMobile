@@ -31,8 +31,16 @@
         <activity android:name=".ListadoParticipantes" />
         <activity android:name=".MenuPrincipal" />
         <activity android:name=".MostrarPenca" />
-        <activity android:name=".ListadoPartidoTorneo"></activity>
-        <activity android:name=".ListadoSolPencas"></activity>
+        <activity android:name=".ListadoPartidoTorneo" />
+        <activity android:name=".ListadoSolPencas" />
+        <activity
+            android:name=".ConfigActivity"
+            android:label="@string/title_activity_config"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.grupo12.viera.pencauy.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

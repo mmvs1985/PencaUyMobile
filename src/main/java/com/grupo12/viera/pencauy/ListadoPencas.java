@@ -52,7 +52,7 @@ public class ListadoPencas extends AppCompatActivity {
         //llamo a la interfaz
         ServicioApiListadoPencas interfaz =retro.create(ServicioApiListadoPencas.class);
         //en la interfaz llamo a la funcion obtener lista pata que me de la respuesta de la api
-        Call<RespuestaApiPencas> respuestacall=interfaz.obtenerListaPencasSolicitadas(ConfigSingletton.getInstance().getUsuarioLogueado().getId());
+        Call<RespuestaApiPencas> respuestacall=interfaz.obtenerLista();
 
         respuestacall.enqueue(new Callback<RespuestaApiPencas>() {
 
