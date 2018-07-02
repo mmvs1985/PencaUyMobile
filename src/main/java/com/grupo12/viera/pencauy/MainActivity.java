@@ -8,16 +8,24 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button log;
+    private Button log,conf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         log=findViewById(R.id.btnLog);
+        conf=findViewById(R.id.btnconf);
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent logueo=new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(logueo);
+            }
+        });
+        conf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logueo=new Intent(MainActivity.this,ConfigurarActivity.class);
                 startActivity(logueo);
             }
         });

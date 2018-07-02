@@ -12,6 +12,14 @@ public class PencaUsuario implements Serializable {
     private final static long serialVersionUID =2871209642999654713L;
     private List<Apuesta> apuestas = null;
 
+    public PencaUsuario(Integer id, Integer puntos, Integer idpenca, Integer idusuario, List<Apuesta> apuestas) {
+        this.id = id;
+        this.puntos = puntos;
+        this.idpenca = idpenca;
+        this.idusuario = idusuario;
+        this.apuestas = apuestas;
+    }
+
     public Integer getId() {
         return id;
     }

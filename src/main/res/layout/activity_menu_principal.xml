@@ -36,14 +36,10 @@
         android:id="@+id/btnListPenc"
         android:layout_width="210dp"
         android:layout_height="47dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/txtListadoPencas"
-        app:layout_constraintEnd_toEndOf="@+id/btnPencas"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btnPencas"
         app:layout_constraintTop_toBottomOf="@+id/btnListPart" />
 
     <TextView
@@ -56,44 +52,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnPencas"
-        android:layout_width="210dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-
-        android:text="@string/pencastxt"
-        app:layout_constraintEnd_toEndOf="@+id/btnApuestas"
-
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btnApuestas"
-        app:layout_constraintTop_toBottomOf="@+id/btnListPenc" />
-
-    <Button
         android:id="@+id/btnSolicitudes"
         android:layout_width="210dp"
         android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/solicitudestxt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnListPart"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/btnListPart"
-        app:layout_constraintTop_toBottomOf="@+id/btnPencas" />
-
-    <Button
-        android:id="@+id/btnApuestas"
-        android:layout_width="210dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/apuestastxt"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSolicitudes" />
+        app:layout_constraintTop_toBottomOf="@+id/btnListPenc"
+        app:layout_constraintVertical_bias="0.033" />
 
 
 </android.support.constraint.ConstraintLayout>

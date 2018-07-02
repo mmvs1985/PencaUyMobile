@@ -49,7 +49,7 @@ public class MostrarPenca extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentorneo=new Intent(MostrarPenca.this, ListadoPartidoTorneo.class);
                 intentorneo.putExtra("itemEnviado",item);
-                intentorneo.putExtra("pencaUsuario",pu);
+                //intentorneo.putExtra("pencaUsuario",pu);
                 startActivity(intentorneo);
             }
         });
@@ -74,6 +74,7 @@ public class MostrarPenca extends AppCompatActivity {
                     if (retorno) {
                         Log.e(ETIQUETA, "en respuesta entro: "+r.toString());
                         pu = r.getPencaUsuario();
+                       // Log.e(ETIQUETA, "en respuesta entro: "+pu.getIdusuario().toString());
                         //participarbtn.setVisibility(true);
 
 

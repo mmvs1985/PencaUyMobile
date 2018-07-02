@@ -29,7 +29,7 @@
     <string name="ip"></string>
     <string name="urlbase">http://172.16.117.246:8080/PencaUyLocal-Backoffice-servicios/rest/api/</string>
     <string name="pencastxt">pencas</string>
-    <string name="solicitudestxt">solicitudes</string>
+    <string name="solicitudestxt">Solicitar participacion</string>
     <string name="apuestastxt">apuestas</string>
     <string name="pencatxt">penca:</string>
     <string name="nombrePencatxt">Penca nombre:</string>

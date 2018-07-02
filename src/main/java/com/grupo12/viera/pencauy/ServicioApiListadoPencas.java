@@ -31,7 +31,8 @@ public interface ServicioApiListadoPencas {
 
     @POST("pencausuario/existe_get/{idUsr}/{idPenca}")
     Call<RespuestaApiPenUsr>existe_getPencaUsuario(@Path("idPenca") String idPenca, @Path("idUsr") String idUsuario);
-    /*
+
 //int goleslocal, int golesvisita, int equipopasa, int partido, int pencausuario
-    @POST("apuestas/realizar/")*/
+    @POST("apuesta/realizarApuesta/{golesLocal}/{golesVisita}/{equipopasa}/{idpartido}/{idusuario}/{idpenca}")
+    Call<RespuestaApiBooleana> realizarApuesta(@Path("golesLocal") int golesLocal, @Path("golesVisita") int golesVisita, @Path("equipopasa") String equipopasa, @Path("idpartido") int idpartido,@Path("idusuario") int idusuario,@Path("idpenca") int idpenca);
 }

@@ -2,7 +2,9 @@
 package modelos;
 
 
-public class Partido {
+import java.io.Serializable;
+
+public class Partido implements Serializable {
 
     private Integer idPartido;
     private String partidoEquipoGanador;

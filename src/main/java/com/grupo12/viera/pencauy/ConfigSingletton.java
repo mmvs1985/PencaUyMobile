@@ -12,7 +12,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConfigSingletton {
     private static final ConfigSingletton ourInstance = new ConfigSingletton();
-    private static final String urlbase="http://192.168.1.8:8180/PencaUyLocal-Backoffice-servicios/rest/api/";
+    private static String ip="192.168.1.8";
+    private static String urlbase="http://"+ip+":8180/PencaUyLocal-Backoffice-servicios/rest/api/";
     private static Usuario usuarioLogueado;
     private static Retrofit retro=null;
 
@@ -35,6 +36,11 @@ public class ConfigSingletton {
         }
     }
 
+    public void setIp(String ip) {
+        Log.e("Singletton","seteo ip");
+        this.ip = ip;
+        this.urlbase="http://"+ip+":8180/PencaUyLocal-Backoffice-servicios/rest/api/";
+    }
 
     public String getUrlbase() {
         return urlbase;
@@ -47,6 +53,8 @@ public class ConfigSingletton {
     public void setUsuarioLogueado(Usuario usuarioLogueado) {
         this.usuarioLogueado = usuarioLogueado;
     }
+
+
 
     private ConfigSingletton() {
     }

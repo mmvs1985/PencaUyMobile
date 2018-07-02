@@ -13,6 +13,10 @@ public class Apuesta {//implements Serializable {
     private Integer puntos;
     private final static long serialVersionUID =-1382081339894538758L;
 
+    public Apuesta(Integer idApuesta) {
+        this.idApuesta = idApuesta;
+    }
+
     public Integer getIdApuesta() {
         return idApuesta;
     }

@@ -76,22 +76,20 @@
                     android:id="@+id/equipoLoctv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_marginStart="8dp"
                     android:text="@string/equipoLoctxt"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/golesLoctv"
                     app:layout_constraintHorizontal_bias="0.687"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/golesLoctv"
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
                     android:text="25"
                     android:textAlignment="center"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -104,8 +102,8 @@
                     android:id="@+id/golesVistv"
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
                     android:text="25"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/equipovistv"
@@ -118,13 +116,29 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="6dp"
                     android:text="TextView"
                     android:textAlignment="textEnd"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/golesVistv"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnenv"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:allowUndo="true"
+                    android:text="apostar"
+                    android:textAlignment="center"
+                    android:textSize="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/equipoLoctv"
+                    app:layout_constraintStart_toStartOf="@+id/equipoLoctv"
+                    app:layout_constraintTop_toBottomOf="@+id/equipoLoctv" />
             </android.support.constraint.ConstraintLayout>
 
         </LinearLayout>

@@ -23,7 +23,8 @@ public class ListadoPartidoTorneo extends AppCompatActivity {
     private Retrofit retro;
     private ArrayList<Partido> retorno;
     private RecyclerView vistalista;
-    private AdaptadorListaPartidos adaptador;
+    private AdaptadorListaPartidoscApuesta adaptador;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class ListadoPartidoTorneo extends AppCompatActivity {
         setContentView(R.layout.activity_listado_partido_torneo);
         retro = ConfigSingletton.getInstance().getRetro();
         ItemPencas item=(ItemPencas)getIntent().getSerializableExtra("itemEnviado");
+        //PencaUsuario pu=(PencaUsuario)getIntent().getSerializableExtra("pencaUsuario");
         obtenerDatos(item.getId());
         //defino la lista
         vistalista = (RecyclerView) findViewById(R.id.partidosRv);
@@ -38,7 +40,7 @@ public class ListadoPartidoTorneo extends AppCompatActivity {
         //creo el arreglo vacio
         retorno = new ArrayList<>();
         //y defino el adaptador, que se encarga de cargar la lista con los datos del array
-        adaptador = new AdaptadorListaPartidos(retorno);
+        adaptador = new AdaptadorListaPartidoscApuesta(retorno,getApplicationContext(),item);
         vistalista.setAdapter(adaptador);
     }
 
